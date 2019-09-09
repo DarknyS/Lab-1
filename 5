@@ -5,10 +5,13 @@ int main()
 {
 	float a, b, sum, razn, pr, chast;
 	cin >> a >> b;
+        if ((a == 0) || (b == 0)) { cout << "Net reshenyi" << " "; } 
+        else{
 	sum = abs(a)+abs(b);
 	razn = abs(a)-abs(b);
 	pr = abs(a)*abs(b);
 	chast = abs(a) / abs(b);
 	cout << "sum=" << sum << " " << "razn=" << razn << " " << "pr=" << pr << " " << "chast=" << chast;
+        }
 	return 0;
 }
