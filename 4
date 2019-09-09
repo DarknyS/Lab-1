@@ -3,12 +3,15 @@ using namespace std;
 
 int main()
 {
-	float a,b,sum,razn,pr,chast;
-	cin >> a>>b;
-	sum=a*a+b*b;
-	razn = a * a - b * b;
-	pr = a * a * b * b;
-	chast = (a * a) / (b * b);
-	cout << "sum=" << sum <<" "<< "razn=" << razn <<" "<< "pr=" << pr <<" "<< "chast=" << chast; 
+	float a, b, sum, razn, pr, chast;
+	cin >> a >> b;
+	if ((a == 0) || (b == 0)) { cout << "Net reshenyi" << " "; }
+	else {
+		sum = a * a + b * b;
+		razn = a * a - b * b;
+		pr = a * a * b * b;
+		chast = (a * a) / (b * b);
+		cout << "sum=" << sum << " " << "razn=" << razn << " " << "pr=" << pr << " " << "chast=" << chast;
+	}
 	return 0;
 }
